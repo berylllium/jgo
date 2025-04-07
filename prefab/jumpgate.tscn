@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj2uev8mi000k"]
+
+[ext_resource type="PackedScene" uid="uid://dibsyyh3vsx7h" path="res://extern/obj/jumpgate.glb" id="1_ggspb"]
+[ext_resource type="Script" uid="uid://c3ay0d4qca4et" path="res://script/JumpGate.cs" id="2_s0nd6"]
+
+[node name="jumpgate" node_paths=PackedStringArray("inner_ring", "outer_ring") instance=ExtResource("1_ggspb")]
+script = ExtResource("2_s0nd6")
+inner_ring = NodePath("inner_ring")
+outer_ring = NodePath("inner_housing/outer_ring")
