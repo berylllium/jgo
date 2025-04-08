@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://caighlmnvrva"]
+
+[ext_resource type="PackedScene" uid="uid://gxy4mso4e7ja" path="res://extern/obj/inter_room_door_connector_0.glb" id="1_7am7q"]
+
+[node name="inter_room_door_connector_0" instance=ExtResource("1_7am7q")]

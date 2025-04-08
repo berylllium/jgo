@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cfdeim8u885d5"
-path="res://.godot/imported/hangar.glb-6792488507805309fae5c28a768cac8e.scn"
+uid="uid://cgi40ctpalugx"
+path="res://.godot/imported/storage.glb-c80991fe02e81e00b21f75968f4a639b.scn"
 
 [deps]
 
-source_file="res://extern/obj/hangar.glb"
-dest_files=["res://.godot/imported/hangar.glb-6792488507805309fae5c28a768cac8e.scn"]
+source_file="res://extern/obj/storage.glb"
+dest_files=["res://.godot/imported/storage.glb-c80991fe02e81e00b21f75968f4a639b.scn"]
 
 [params]
 

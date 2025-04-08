@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://caxjl3ixjccyc"]
+
+[ext_resource type="PackedScene" uid="uid://dgfmsn6ennaqb" path="res://extern/obj/corridor_0_t.glb" id="1_6krjg"]
+[ext_resource type="PackedScene" uid="uid://cr8sa81ylfuv4" path="res://prefab/deco/wall_light_a.tscn" id="2_sg7m7"]
+
+[node name="corridor-0-t" instance=ExtResource("1_6krjg")]
+
+[node name="wall_light_a" parent="." index="0" instance=ExtResource("2_sg7m7")]
+transform = Transform3D(-4.27737e-08, 0.206016, 0.978549, 9.00526e-09, 0.978549, -0.206016, -1, 0, -4.37114e-08, -1.85804, 1.39857, 0)

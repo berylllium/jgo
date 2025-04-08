@@ -1,26 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://dsjk5twqq3gnp"]
+[gd_scene load_steps=3 format=3 uid="uid://80hlk8htnfnc"]
 
-[ext_resource type="PackedScene" uid="uid://6kvfgmgdyy31" path="res://extern/obj/control_room.glb" id="1_0y13s"]
-[ext_resource type="PackedScene" uid="uid://bdwf8g045uehs" path="res://prefab/corridor_door.tscn" id="2_yjts3"]
-[ext_resource type="PackedScene" uid="uid://cnjfpg7sf8t4g" path="res://extern/obj/control_room_col.glb" id="3_ynua7"]
+[ext_resource type="PackedScene" uid="uid://dlasbyes5t5b" path="res://extern/obj/control_room.glb" id="1_0y13s"]
+[ext_resource type="PackedScene" uid="uid://cr8sa81ylfuv4" path="res://prefab/deco/wall_light_a.tscn" id="2_8te8v"]
 
 [node name="control_room" instance=ExtResource("1_0y13s")]
 
-[node name="corridor_door" parent="corridor_door_002" index="0" instance=ExtResource("2_yjts3")]
+[node name="wall_light_a" parent="." index="0" instance=ExtResource("2_8te8v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, -2)
 
-[node name="control_room_col" parent="." index="35" instance=ExtResource("3_ynua7")]
+[node name="wall_light_a6" parent="." index="1" instance=ExtResource("2_8te8v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.333, 2, 0)
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="." index="36"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.91581, 2.10511, -1.56959)
-light_color = Color(0.937255, 0.752941, 0.439216, 1)
-shadow_enabled = true
+[node name="wall_light_a7" parent="." index="2" instance=ExtResource("2_8te8v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.667, 2, 0)
 
-[node name="OmniLight3D3" type="OmniLight3D" parent="." index="37"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.53739, 1.39059, 1.29669)
-light_color = Color(0.937255, 0.752941, 0.439216, 1)
-shadow_enabled = true
+[node name="wall_light_a2" parent="." index="3" instance=ExtResource("2_8te8v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -2)
 
-[node name="OmniLight3D4" type="OmniLight3D" parent="." index="38"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9638, 1.39059, 1.29669)
-light_color = Color(0.937255, 0.752941, 0.439216, 1)
-shadow_enabled = true
+[node name="wall_light_a3" parent="." index="4" instance=ExtResource("2_8te8v")]
+transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, -6, 2, 2)
+
+[node name="wall_light_a4" parent="." index="5" instance=ExtResource("2_8te8v")]
+transform = Transform3D(-1.17225e-07, 0, -1, 0, 1, 0, 1, 0, -1.17225e-07, 6, 2, 2)
+
+[node name="wall_light_a5" parent="." index="6" instance=ExtResource("2_8te8v")]
+transform = Transform3D(-1.17225e-07, 0, -1, 0, 1, 0, 1, 0, -1.17225e-07, 6, 2, -1)

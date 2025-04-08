@@ -7,3 +7,43 @@
 script = ExtResource("2_s0nd6")
 inner_ring = NodePath("inner_ring")
 outer_ring = NodePath("inner_housing/outer_ring")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_001/light" index="0"]
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_002/light2" index="0"]
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_003/light3" index="0"]
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_004/light4" index="0"]
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_005/light5" index="0"]
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_006/light6" index="0"]
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_007/light7" index="0"]
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="light8" index="0"]
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5

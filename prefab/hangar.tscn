@@ -1,14 +1,5 @@
-[gd_scene load_steps=5 format=3 uid="uid://dqsfyw3vsm0h0"]
+[gd_scene load_steps=2 format=3 uid="uid://bdeit6r7wnraf"]
 
-[ext_resource type="PackedScene" uid="uid://nr2dc68tfayj" path="res://extern/obj/hangar.glb" id="1_hyvoy"]
-[ext_resource type="PackedScene" uid="uid://bdwf8g045uehs" path="res://prefab/corridor_door.tscn" id="2_74yyk"]
-[ext_resource type="PackedScene" uid="uid://dq33182840jsw" path="res://extern/obj/hangar_col.glb" id="2_urpvg"]
-[ext_resource type="PackedScene" uid="uid://cxyn21r3e0big" path="res://prefab/hangar_door.tscn" id="3_nr7ub"]
+[ext_resource type="PackedScene" uid="uid://cfdeim8u885d5" path="res://extern/obj/hangar.glb" id="1_hyvoy"]
 
 [node name="hangar" instance=ExtResource("1_hyvoy")]
-
-[node name="corridor_door" parent="corridor_door" index="0" instance=ExtResource("2_74yyk")]
-
-[node name="hangar_door" parent="hangar_door" index="0" instance=ExtResource("3_nr7ub")]
-
-[node name="hangar_col" parent="." index="37" instance=ExtResource("2_urpvg")]

@@ -1,8 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://c378jdvaspo33"]
+[gd_scene load_steps=2 format=3 uid="uid://dmctny5viae33"]
 
-[ext_resource type="PackedScene" uid="uid://beoerp2unsr28" path="res://extern/obj/corridor_door_frame.glb" id="1_u8n7a"]
-[ext_resource type="PackedScene" uid="uid://d3eiun8jelmrv" path="res://extern/obj/corridor_door_frame_col.glb" id="2_40y4l"]
+[ext_resource type="PackedScene" uid="uid://bj37n34ypvppf" path="res://extern/obj/corridor_door_frame.glb" id="1_ads55"]
 
-[node name="corridor_door_frame" instance=ExtResource("1_u8n7a")]
-
-[node name="corridor_door_frame_col" parent="." index="17" instance=ExtResource("2_40y4l")]
+[node name="corridor_door_frame" instance=ExtResource("1_ads55")]

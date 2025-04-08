@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpl2d1qibpfna"]
-
-[ext_resource type="PackedScene" uid="uid://do5mo5kjyqsp7" path="res://extern/obj/corridor_corner_right.glb" id="1_3f55o"]
-[ext_resource type="PackedScene" uid="uid://c6rujtmgej5nh" path="res://extern/obj/corridor_corner_right_col.glb" id="2_2ce6n"]
-
-[node name="corridor_corner_right" instance=ExtResource("1_3f55o")]
-
-[node name="corridor_corner_right_col" parent="." index="18" instance=ExtResource("2_2ce6n")]

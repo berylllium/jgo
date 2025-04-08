@@ -3,24 +3,24 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cfdeim8u885d5"
-path="res://.godot/imported/hangar.glb-6792488507805309fae5c28a768cac8e.scn"
+uid="uid://5ptq1px1ggbs"
+path="res://.godot/imported/wall_light_a.glb-d802b06f27edf1d0e68c59dfd0d592ad.scn"
 
 [deps]
 
-source_file="res://extern/obj/hangar.glb"
-dest_files=["res://.godot/imported/hangar.glb-6792488507805309fae5c28a768cac8e.scn"]
+source_file="res://extern/obj/wall_light_a.glb"
+dest_files=["res://.godot/imported/wall_light_a.glb-d802b06f27edf1d0e68c59dfd0d592ad.scn"]
 
 [params]
 
-nodes/root_type=""
-nodes/root_name=""
+nodes/root_type="Node3D"
+nodes/root_name="wall_light_a"
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
-meshes/generate_lods=true
+meshes/generate_lods=false
 meshes/create_shadow_meshes=true
 meshes/light_baking=1
 meshes/lightmap_texel_size=0.2
@@ -34,9 +34,13 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
+"Emissive": {
+"use_external/enabled": true,
+"use_external/path": "uid://dmtdudqimtbha"
+},
 "Material": {
 "use_external/enabled": true,
-"use_external/path": "uid://uplnndu2eha5"
+"use_external/path": "uid://esvjjfc4ap1u"
 }
 }
 }

@@ -1,8 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bue1o1c2vlwe0"]
+[gd_scene load_steps=3 format=3 uid="uid://cxoidyihlf6ic"]
 
-[ext_resource type="PackedScene" uid="uid://ca5sddjaxg4lp" path="res://extern/obj/corridor_0.glb" id="1_kih4x"]
-[ext_resource type="PackedScene" uid="uid://cidsryj1ow7sn" path="res://extern/obj/corridor_0_col.glb" id="2_2l53d"]
+[ext_resource type="PackedScene" uid="uid://b0arlwwa0jwt4" path="res://extern/obj/corridor_0.glb" id="1_kih4x"]
+[ext_resource type="PackedScene" uid="uid://cr8sa81ylfuv4" path="res://prefab/deco/wall_light_a.tscn" id="2_lwgys"]
 
 [node name="corridor_0" instance=ExtResource("1_kih4x")]
 
-[node name="corridor_0_collision" parent="." index="10" instance=ExtResource("2_2l53d")]
+[node name="wall_light_a" parent="." index="0" instance=ExtResource("2_lwgys")]
+transform = Transform3D(-4.27311e-08, -0.210591, -0.977574, -9.20523e-09, 0.977574, -0.210591, 1, 0, -4.37114e-08, 1.86267, 1.36308, 0)

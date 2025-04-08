@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://uplnndu2eha5"]
+
+[ext_resource type="Shader" uid="uid://b7ngdvtnbu17e" path="res://shader/rough_wall.gdshader" id="1_rfbnf"]
+[ext_resource type="Texture2D" uid="uid://cgbojyrcf7erg" path="res://texture/rough_wall_noise_texture.tres" id="2_0uijm"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_rfbnf")
+shader_parameter/color = Color(0.621529, 0.621522, 0.621524, 1)
+shader_parameter/noise_texture = ExtResource("2_0uijm")

@@ -1,95 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://bksnk6edlryb1"]
+[gd_scene load_steps=3 format=3 uid="uid://7x6lilsfydlb"]
 
-[ext_resource type="PackedScene" uid="uid://u3apkgdtarhc" path="res://extern/obj/station_airlock.glb" id="1_6tlda"]
-[ext_resource type="PackedScene" uid="uid://ctsguak1bhkm6" path="res://extern/obj/door_0.glb" id="2_5dbtn"]
+[ext_resource type="PackedScene" uid="uid://vg0jp36iwhqt" path="res://extern/obj/airlock.glb" id="1_2odfs"]
+[ext_resource type="PackedScene" uid="uid://cr8sa81ylfuv4" path="res://prefab/deco/wall_light_a.tscn" id="2_3vvpr"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fwams"]
-points = PackedVector3Array(-1, 2.4, -1, -1, 2.4, 0.8, -0.800117, 2.6, -1, 1, 2.4, -1, 1, 2.4, 0.8, -0.800117, 2.6, -0.400059, 0.799922, 2.6, -1, 0.799922, 2.6, -0.400059)
+[node name="airlock" instance=ExtResource("1_2odfs")]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_d0jhy"]
-points = PackedVector3Array(-1, -1, -0.1, 1, -1, -0.1, -1, -1, 0.1, -1, 1.4, -0.1, 1, -1, 0.1, 1, 1.4, -0.1, -1, 1.4, 0.1, 1, 1.4, 0.1)
+[node name="wall_light_a" parent="." index="0" instance=ExtResource("2_3vvpr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.11656, 2)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_g8ihw"]
-points = PackedVector3Array(1, 2.4, 0.8, 1, 2.4, -1, 1, 0, 0.8, 1, 0, -1)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tr87q"]
-points = PackedVector3Array(-1, 2.4, 0.8, -1, 2.4, -1, -1, 0, 0.8, -1, 0, -1)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xxlkk"]
-points = PackedVector3Array(0.75, 0.025, 1, 0.75, -0.025, 1, 0.75, 0.025, -0.8, -0.75, 0.025, 1, -0.75, -0.025, 1, 0.75, -0.025, -0.8, -0.75, 0.025, -0.8, -0.75, -0.025, -0.8)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_n5r6a"]
-points = PackedVector3Array(-1, 2.4, -1, -1, 2.4, 0.8, -0.800117, 2.6, -1, 1, 2.4, -1, 1, 2.4, 0.8, -0.800117, 2.6, -0.400059, 0.799922, 2.6, -1, 0.799922, 2.6, -0.400059)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5uky5"]
-points = PackedVector3Array(1, 2.4, 0.8, 1, 2.4, -1, 1, 0, 0.8, 1, 0, -1)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6u0bd"]
-points = PackedVector3Array(-1, 2.4, 0.8, -1, 2.4, -1, -1, 0, 0.8, -1, 0, -1)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qdvxs"]
-points = PackedVector3Array(-1, -1, -0.1, 1, -1, -0.1, -1, -1, 0.1, -1, 1.4, -0.1, 1, -1, 0.1, 1, 1.4, -0.1, -1, 1.4, 0.1, 1, 1.4, 0.1)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_c4fvx"]
-points = PackedVector3Array(0.75, 0.025, 1, 0.75, -0.025, 1, 0.75, 0.025, -0.8, -0.75, 0.025, 1, -0.75, -0.025, 1, 0.75, -0.025, -0.8, -0.75, 0.025, -0.8, -0.75, -0.025, -0.8)
-
-[node name="airlock" instance=ExtResource("1_6tlda")]
-
-[node name="StaticBody3D" type="StaticBody3D" parent="airlock_roof" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="airlock_roof/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_fwams")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="door_frame" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="door_frame/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_d0jhy")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="airlock_wall_left" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="airlock_wall_left/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_g8ihw")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="airlock_wall_right" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="airlock_wall_right/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_tr87q")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="catwalk_end_001" index="1"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="catwalk_end_001/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_xxlkk")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="airlock_roof_001" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="airlock_roof_001/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_n5r6a")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="airlock_wall_left_001" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="airlock_wall_left_001/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_5uky5")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="airlock_wall_right_001" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="airlock_wall_right_001/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_6u0bd")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="door_frame_001" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="door_frame_001/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_qdvxs")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="catwalk_end_002" index="1"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="catwalk_end_002/StaticBody3D" index="0"]
-shape = SubResource("ConvexPolygonShape3D_c4fvx")
-
-[node name="door_0" parent="door" index="0" instance=ExtResource("2_5dbtn")]
-
-[node name="door_0" parent="door_001" index="0" instance=ExtResource("2_5dbtn")]
-
-[node name="OmniLight3D" type="OmniLight3D" parent="." index="16"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.27942, -0.00643694)
-shadow_enabled = true
-omni_range = 3.73215
+[node name="door_frame_005" parent="." index="20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0072453, 1, 1.8996)
