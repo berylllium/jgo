@@ -1,14 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://ie4prxjlq0yg"]
-
-[ext_resource type="Script" uid="uid://dhyexwmu2l5u8" path="res://script/Player.cs" id="1_nkns1"]
+[gd_scene load_steps=2 format=3 uid="uid://ie4prxjlq0yg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gkb8f"]
 radius = 0.3
 height = 1.8
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("Camera") groups=["player"]]
-script = ExtResource("1_nkns1")
-Camera = NodePath("Camera3D")
+[node name="Player" type="Player" node_paths=PackedStringArray("camera") groups=["player"]]
+camera = NodePath("Camera3D")
 metadata/is_player = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -16,3 +13,4 @@ shape = SubResource("CapsuleShape3D_gkb8f")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+current = true
