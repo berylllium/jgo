@@ -1,49 +1,79 @@
-[gd_scene load_steps=3 format=3 uid="uid://cj2uev8mi000k"]
+[gd_scene load_steps=2 format=3 uid="uid://cj2uev8mi000k"]
 
 [ext_resource type="PackedScene" uid="uid://dibsyyh3vsx7h" path="res://extern/obj/jumpgate.glb" id="1_ggspb"]
-[ext_resource type="Script" uid="uid://c3ay0d4qca4et" path="res://script/JumpGate.cs" id="2_s0nd6"]
 
 [node name="jumpgate" node_paths=PackedStringArray("inner_ring", "outer_ring") instance=ExtResource("1_ggspb")]
-script = ExtResource("2_s0nd6")
 inner_ring = NodePath("inner_ring")
 outer_ring = NodePath("inner_housing/outer_ring")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_001/light" index="0"]
+[node name="OmniLight3D" type="OmniLight3D" parent="inner_ring/inner_ring_light/light" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
 light_energy = 0.1
 omni_range = 15.0
 omni_attenuation = 0.5
 
-[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_002/light2" index="0"]
+[node name="OmniLight3D" type="OmniLight3D" parent="inner_ring/inner_ring_light_001/light2" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
 light_energy = 0.1
 omni_range = 15.0
 omni_attenuation = 0.5
 
-[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_003/light3" index="0"]
+[node name="OmniLight3D" type="OmniLight3D" parent="inner_ring/inner_ring_light_002/light3" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
 light_energy = 0.1
 omni_range = 15.0
 omni_attenuation = 0.5
 
-[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_004/light4" index="0"]
+[node name="OmniLight3D" type="OmniLight3D" parent="inner_ring/inner_ring_light_003/light4" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
 light_energy = 0.1
 omni_range = 15.0
 omni_attenuation = 0.5
 
-[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_005/light5" index="0"]
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light/light5" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
 light_energy = 0.1
 omni_range = 15.0
 omni_attenuation = 0.5
 
-[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_006/light6" index="0"]
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_001/light6" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
 light_energy = 0.1
 omni_range = 15.0
 omni_attenuation = 0.5
 
-[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_007/light7" index="0"]
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_002/light7" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
 light_energy = 0.1
 omni_range = 15.0
 omni_attenuation = 0.5
 
-[node name="OmniLight3D" type="OmniLight3D" parent="light8" index="0"]
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_003/light8" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_004/light9" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_005/light10" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_006/light11" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
+light_energy = 0.1
+omni_range = 15.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D" type="OmniLight3D" parent="housing_light_007/light12" index="0"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, 0, 0, 0.5)
 light_energy = 0.1
 omni_range = 15.0
 omni_attenuation = 0.5

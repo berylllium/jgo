@@ -1,13 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://dv0b1jymulp3n"]
+[gd_scene load_steps=3 format=3 uid="uid://dv0b1jymulp3n"]
 
 [ext_resource type="PackedScene" uid="uid://ulbadsq2lxu0" path="res://extern/obj/ui/lever.glb" id="1_i33ld"]
-[ext_resource type="Script" uid="uid://2bl3mf1kokqa" path="res://script/ui/Lever.cs" id="2_vlhc5"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ousgo"]
 size = Vector3(0.1, 0.02, 0.04)
 
 [node name="lever" node_paths=PackedStringArray("lever") instance=ExtResource("1_i33ld")]
-script = ExtResource("2_vlhc5")
 lever = NodePath("lever")
 
 [node name="Area3D" type="Area3D" parent="lever" index="0"]
@@ -16,4 +14,4 @@ lever = NodePath("lever")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11, 0)
 shape = SubResource("BoxShape3D_ousgo")
 
-[connection signal="input_event" from="lever/Area3D" to="." method="mouse_event"]
+[connection signal="input_event" from="lever/Area3D" to="." method="on_area_event"]

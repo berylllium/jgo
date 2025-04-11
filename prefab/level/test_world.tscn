@@ -1,7 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://dq5wuvdtkcnoq"]
+[gd_scene load_steps=13 format=3 uid="uid://dq5wuvdtkcnoq"]
 
 [ext_resource type="PackedScene" uid="uid://ie4prxjlq0yg" path="res://prefab/player.tscn" id="1_1leqg"]
-[ext_resource type="Script" path="res://script/Game.cs" id="1_pwnrf"]
 [ext_resource type="Material" uid="uid://2sw0aqogjyoh" path="res://material/star_sky.tres" id="2_katac"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e6jb7"]
@@ -37,9 +36,7 @@ process_mode = 1
 background_mode = 2
 sky = SubResource("Sky_g0ams")
 
-[node name="test_world" type="Node3D"]
-script = ExtResource("1_pwnrf")
-skybox_material = ExtResource("2_katac")
+[node name="test_world" type="Game"]
 
 [node name="Player" parent="." instance=ExtResource("1_1leqg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8754, 0)

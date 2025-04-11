@@ -17,8 +17,8 @@ Override"
 outline_size = 0
 
 [node name="button" parent="." instance=ExtResource("1_kq33h")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0493391, 0, 0)
 toggle = true
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0493391, 0, 0)
 
 [node name="lever" parent="." instance=ExtResource("2_xsii3")]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0809133, 0.0559992, 0)

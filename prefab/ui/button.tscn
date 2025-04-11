@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://dlvtjcq7dqgax"]
+[gd_scene load_steps=7 format=3 uid="uid://dlvtjcq7dqgax"]
 
 [ext_resource type="PackedScene" uid="uid://bm3bsmfopl01v" path="res://extern/obj/ui/button.glb" id="1_1npnb"]
-[ext_resource type="Script" uid="uid://jnnshyuvwfj0" path="res://script/ui/Button.cs" id="2_1i70v"]
 
 [sub_resource type="Animation" id="Animation_jngkk"]
 length = 0.001
@@ -45,9 +44,8 @@ _data = {
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_78oec"]
 points = PackedVector3Array(-0.00229693, 0.0198922, 0.0245454, -0.0023766, -0.000396825, -0.0253968, -0.00229693, 0.0198922, -0.0245454, 0.0253968, -0.000396825, -0.0023766, -0.0228874, 1.19181e-06, 0.00991885, -0.0228874, 0.0198401, -0.00991885, 0.0228899, 0.0198411, -0.00991514, 0.00991513, 1.19857e-07, 0.0228899, 0.01831, 0.0198411, 0.016785, -0.01831, 1.2086e-07, -0.016785, -0.0228874, 0.0198401, 0.00991885, 0.0167823, 1.7275e-06, -0.0183118, -0.00991514, 1.20258e-07, 0.0228899, -0.0253968, -0.000396825, -0.0023766, 0.00991513, 0.0198411, -0.0228899, 0.0228899, 1.20057e-07, 0.00991514, 0.0245454, 0.0198922, 0.00229693, -0.00991514, 0.0198411, -0.0228899, -0.0167823, 0.0198395, 0.0183118, 0.0023766, -0.000396825, 0.0253968, 0.00991513, 0.0198411, 0.0228899, 0.0023766, -0.000396825, -0.0253968, -0.0245454, 0.0198922, 0.00229693, -0.01831, 1.2086e-07, 0.016785, 0.0167823, 1.7275e-06, 0.0183118, 0.01831, 0.0198411, -0.016785, -0.01831, 0.0198411, -0.016785, 0.0228899, 1.20057e-07, -0.00991514, -0.00991514, 1.20258e-07, -0.0228899, 0.0228899, 0.0198411, 0.00991514, -0.00991514, 0.0198411, 0.0228899, -0.0023766, -0.000396825, 0.0253968)
 
-[node name="button" node_paths=PackedStringArray("animationPlayer") instance=ExtResource("1_1npnb")]
-script = ExtResource("2_1i70v")
-animationPlayer = NodePath("AnimationPlayer")
+[node name="button" node_paths=PackedStringArray("animation_player") instance=ExtResource("1_1npnb")]
+animation_player = NodePath("AnimationPlayer")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="0"]
 libraries = {
@@ -59,4 +57,4 @@ libraries = {
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cylinder/Area3D" index="0"]
 shape = SubResource("ConvexPolygonShape3D_78oec")
 
-[connection signal="input_event" from="Cylinder/Area3D" to="." method="mouse_event"]
+[connection signal="input_event" from="Cylinder/Area3D" to="." method="on_area_event"]

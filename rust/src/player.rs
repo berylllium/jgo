@@ -2,7 +2,7 @@ use std::f32::consts::PI;
 
 use godot::classes::input::MouseMode;
 use godot::prelude::*;
-use godot::classes::{CharacterBody3D, ICharacterBody3D, InputEvent, InputEventMouseMotion};
+use godot::classes::{Camera3D, CharacterBody3D, ICharacterBody3D, Input, InputEvent, InputEventMouseMotion};
 
 use crate::math::{clamp, move_toward};
 
@@ -67,7 +67,10 @@ impl Player {
             self.exit_precision_mode();
         }
     }
+}
 
+#[godot_api]
+impl Player {
     fn enter_precision_mode(&mut self) {
         self.in_precision_mode = true;
         Input::singleton().set_mouse_mode(MouseMode::CONFINED);

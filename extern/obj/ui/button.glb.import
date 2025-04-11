@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/button.glb-61bb49ed7e4b4543c1888a505e10902e.s
 
 [params]
 
-nodes/root_type="Node3D"
+nodes/root_type="PushButton"
 nodes/root_name="button"
 nodes/apply_root_scale=true
 nodes/root_scale=1.0

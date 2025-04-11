@@ -1,6 +1,9 @@
 mod button;
-mod player;
+mod game;
+mod lever;
 mod math;
+mod player;
+mod station;
 
 use godot::prelude::*;
 

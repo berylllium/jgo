@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/jumpgate.glb-cd57d6f19b8366d1771c73d771953ba9
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="Jumpgate"
 nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
