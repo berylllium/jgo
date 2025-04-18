@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://cptuhq27f3r0"]
+
+[ext_resource type="ArrayMesh" uid="uid://df4rq035t1fnd" path="res://mesh/simple_torus.res" id="1_uro6t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cb6t3"]
+shading_mode = 0
+
+[node name="ColorRect" type="ColorRect"]
+offset_right = 320.0
+offset_bottom = 240.0
+color = Color(0.415686, 0.415686, 0.415686, 1)
+
+[node name="alignment_status_vis" type="SubViewportContainer" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="alignment_status_vis"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+debug_draw = 4
+size = Vector2i(320, 240)
+render_target_update_mode = 4
+
+[node name="Node3D" type="Node3D" parent="alignment_status_vis/SubViewport"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="alignment_status_vis/SubViewport/Node3D"]
+layers = 131073
+mesh = ExtResource("1_uro6t")
+surface_material_override/0 = SubResource("StandardMaterial3D_cb6t3")
+
+[node name="Camera3D" type="Camera3D" parent="alignment_status_vis/SubViewport/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.83686)
+projection = 1
+size = 2.445

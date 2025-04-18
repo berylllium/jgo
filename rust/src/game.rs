@@ -1,7 +1,7 @@
 use godot::{classes::ShaderMaterial, prelude::*};
 
 #[derive(GodotClass)]
-#[class(base=Node3D)]
+#[class(tool, base=Node3D)]
 pub struct Game {
     #[export]
     skybox_material: Option<Gd<ShaderMaterial>>,
@@ -57,7 +57,14 @@ impl INode3D for Game {
                     diameter: 1200000,
                     space_location: SpaceLocation {
                         name: "Goober".into(),
-                        position: Vector3::new(4.0, 2.0, 0.0),
+                        position: Vector3::new(4.0, 10.0, 3.0),
+                    },
+                },
+                Star {
+                    diameter: 1200000,
+                    space_location: SpaceLocation {
+                        name: "Gorgar".into(),
+                        position: Vector3::new(5.0, 2.0, 0.0),
                     },
                 },
                 Star {

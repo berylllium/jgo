@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://c385sfhk4p7en"]
+
+[ext_resource type="FontFile" uid="uid://ws83csi4bekl" path="res://font/arial.ttf" id="1_rui71"]
+
+[resource]
+font = ExtResource("1_rui71")
+font_size = 48

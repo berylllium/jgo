@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8y1vax1ls4py"]
+
+[ext_resource type="PackedScene" uid="uid://djkplm0bqnrgh" path="res://prefab/ui/alignment_controls.tscn" id="1_6fv68"]
+[ext_resource type="PackedScene" uid="uid://ie4prxjlq0yg" path="res://prefab/player.tscn" id="1_rd33n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tk8p0"]
+size = Vector3(13.8724, 0.608521, 17.1762)
+
+[node name="ScreenTest" type="Node3D"]
+
+[node name="alignment_controls" parent="." instance=ExtResource("1_6fv68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.287743, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.726257, -1.19574, 0.627594)
+shape = SubResource("BoxShape3D_tk8p0")
+
+[node name="Player" parent="." instance=ExtResource("1_rd33n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.37485)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.944095, 0.138559, -0.299143, 0, 0.907389, 0.420292, 0.329674, -0.396795, 0.856661, -0.013133, 1.24903, 1.47999)

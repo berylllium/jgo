@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbn3wbvqd5m0x"]
+
+[ext_resource type="Shader" uid="uid://ber0nqjvm42wp" path="res://shader/crt_screen.gdshader" id="1_iwsju"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_o63mg"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7g4xc"]
+shader = ExtResource("1_iwsju")
+
+[node name="screen" type="Screen"]
+x = 640
+y = 480
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+pixel_size = 0.0015625
+shaded = true
+double_sided = false
+texture = SubResource("ViewportTexture_o63mg")
+region_enabled = true
+region_rect = Rect2(0, 0, 640, 480)
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(640, 480)
+
+[node name="overlay" type="ColorRect" parent="SubViewport"]
+z_index = 4096
+material = SubResource("ShaderMaterial_7g4xc")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://djcoylvi4gghv"]
+
+[ext_resource type="PackedScene" uid="uid://gujh0lnu6pgs" path="res://extern/obj/screen_a.glb" id="1_5ua8x"]
+[ext_resource type="PackedScene" uid="uid://bbn3wbvqd5m0x" path="res://prefab/ui/screen.tscn" id="2_3e24n"]
+[ext_resource type="PackedScene" uid="uid://wr0752tg63jk" path="res://prefab/ui/monitor_button_a.tscn" id="3_1rx2y"]
+
+[node name="screen_a" instance=ExtResource("1_5ua8x")]
+
+[node name="screen" parent="screen" index="0" instance=ExtResource("2_3e24n")]
+width = 0.6
+
+[node name="monitor_button_a" parent="monitor_button_a" index="0" instance=ExtResource("3_1rx2y")]
+
+[connection signal="button_pressed" from="monitor_button_a/monitor_button_a" to="screen/screen" method="on_off_toggle"]

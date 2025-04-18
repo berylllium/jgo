@@ -3,6 +3,7 @@ mod game;
 mod lever;
 mod math;
 mod player;
+mod screen;
 mod station;
 
 use godot::prelude::*;

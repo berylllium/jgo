@@ -4,5 +4,5 @@
 
 [resource]
 shader = ExtResource("1_mbs2i")
-shader_parameter/stars = PackedVector3Array()
-shader_parameter/star_count = 0
+shader_parameter/stars = PackedVector3Array(0.357771, 0.894427, 0.268328, 0.928477, 0.371391, 0, 0.365148, 0.182574, 0.912871)
+shader_parameter/star_count = 3

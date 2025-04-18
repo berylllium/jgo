@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cktwrvgry8pel"]
+
+[ext_resource type="PackedScene" uid="uid://bnum7hm2wxthr" path="res://extern/obj/table_a.glb" id="1_hocf5"]
+
+[node name="table_a" instance=ExtResource("1_hocf5")]

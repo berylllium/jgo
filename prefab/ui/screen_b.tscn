@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4hjd3bpkq2yc"]
+
+[ext_resource type="PackedScene" uid="uid://cfmf55ijq8ce2" path="res://extern/obj/screen_b.glb" id="1_drcvn"]
+[ext_resource type="PackedScene" uid="uid://bbn3wbvqd5m0x" path="res://prefab/ui/screen.tscn" id="2_ph38g"]
+
+[node name="screen_b" instance=ExtResource("1_drcvn")]
+
+[node name="screen" parent="screen" index="0" instance=ExtResource("2_ph38g")]
+x = 320
+y = 240
+width = 0.3

@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://djkplm0bqnrgh"]
+
+[ext_resource type="PackedScene" uid="uid://d05rwqcoal4qi" path="res://prefab/table_b.tscn" id="1_equ4j"]
+[ext_resource type="PackedScene" uid="uid://b4hjd3bpkq2yc" path="res://prefab/ui/screen_b.tscn" id="1_fuxa8"]
+[ext_resource type="PackedScene" uid="uid://djcoylvi4gghv" path="res://prefab/ui/screen_a.tscn" id="1_p456s"]
+[ext_resource type="PackedScene" uid="uid://cptuhq27f3r0" path="res://ui/alignment_status_vis.tscn" id="2_equ4j"]
+[ext_resource type="PackedScene" uid="uid://0sxt4j0nodja" path="res://ui/alignment_status.tscn" id="2_s31ps"]
+
+[node name="alignment_controls" type="Node3D"]
+
+[node name="table_b" parent="." instance=ExtResource("1_equ4j")]
+
+[node name="screen_b" parent="." instance=ExtResource("1_fuxa8")]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, 0.55, 1.1, -0.05)
+
+[node name="screen_housing" parent="screen_b" index="0"]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0)
+
+[node name="screen" parent="screen_b/screen" index="0"]
+ui = ExtResource("2_equ4j")
+
+[node name="screen_a" parent="." instance=ExtResource("1_p456s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, -0.2)
+
+[node name="screen" parent="screen_a/screen" index="0"]
+ui = ExtResource("2_s31ps")
+
+[editable path="screen_b"]
+[editable path="screen_a"]

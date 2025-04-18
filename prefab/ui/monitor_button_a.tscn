@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://wr0752tg63jk"]
+
+[ext_resource type="PackedScene" uid="uid://cmkrl6ka2cni2" path="res://extern/obj/ui/monitor_button_a.glb" id="1_ojb12"]
+
+[node name="monitor_button_a" node_paths=PackedStringArray("hitbox") instance=ExtResource("1_ojb12")]
+toggle = true
+hitbox = NodePath("on_off_button/on_off_button")
