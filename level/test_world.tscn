@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b031cu503lsks"]
+
+[ext_resource type="PackedScene" uid="uid://blhw8m4k55c7n" path="res://prefab/level/test_world.tscn" id="1_ryqtw"]
+[ext_resource type="PackedScene" uid="uid://bj30kxfecwoyw" path="res://prefab/player.tscn" id="2_4a5jc"]
+
+[node name="TestWorld" type="Node3D"]
+
+[node name="test_world" parent="." instance=ExtResource("1_ryqtw")]
+
+[node name="player" parent="." instance=ExtResource("2_4a5jc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, 0.433013, -0.25, 0, 0.5, 0.866025, 0.5, -0.75, 0.433013, -1, 3, 0)
+shadow_enabled = true

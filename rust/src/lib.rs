@@ -1,3 +1,6 @@
+mod math;
+mod player;
+
 use godot::prelude::*;
 
 struct RustExtension;
