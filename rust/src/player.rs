@@ -29,11 +29,11 @@ struct Player {
 }
 
 impl Player {
-    fn handle_movement(&mut self, delta: f64) {
+    fn handle_velocity(&mut self, delta: f64) {
         let mut velocity = self.base().get_velocity();
 
         if !self.base().is_on_floor() {
-            velocity += self.base().get_gravity();
+            velocity += self.base().get_gravity() * delta as f32;
         }
 
         let input_dir = Input::singleton().get_vector(
@@ -167,6 +167,6 @@ impl ICharacterBody3D for Player {
     }
 
     fn process(&mut self, delta: f64) {
-        self.handle_movement(delta);
+        self.handle_velocity(delta);
     }
 }
